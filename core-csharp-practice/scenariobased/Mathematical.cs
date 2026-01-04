@@ -11,23 +11,46 @@ negative numbers.*/
 using System;
 class Mathematical{
     static void Main()
-    {
+    {   while(true)
+        {
+         Console.WriteLine("1. Factorial ");
+         Console.WriteLine("2. prime or not");
+        Console.WriteLine("3. find GCD");
+         Console.WriteLine("4.Fibonacci value");
+         Console.WriteLine("5. EXIT");
+        int i=int.Parse(Console.ReadLine());
+        switch(i)
+        {
+            case 1:{
+            Console.WriteLine("Enter a number");
+        int n = int.Parse(Console.ReadLine());
+         Console.WriteLine(Factorial(n));
+         break;}
+         case 2:{
         Console.WriteLine("Enter a number");
         int n = int.Parse(Console.ReadLine());
-         Console.WriteLine("Factorial is");
-        Console.WriteLine(Factorial(n));
-         Console.WriteLine("Check a number if it is prime or not");
          Console.WriteLine(Prime(n));
-        Console.WriteLine("Enter a number to find GCD");
-         Console.WriteLine("Enter first number");
+             break;}
+             case 3:{
+        Console.WriteLine("Enter first number");
         int a=int.Parse(Console.ReadLine());
          Console.WriteLine("Enter second number");
         int b=int.Parse(Console.ReadLine());
          Console.WriteLine("GCD is");
         Console.WriteLine(GreatestCommonD(a,b));
-         Console.WriteLine("Fibonacci value");
+        break;}
+        case 4: {
+         Console.WriteLine("Enter a number");
+        int n = int.Parse(Console.ReadLine());
         Console.WriteLine(Fibonacci(n));
-
+        break;}
+         Case 5:
+         {
+            .
+            
+         }
+      
+        }}
     }
     static int Factorial(int n)
     {
